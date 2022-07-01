@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Tour Cancellation</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../../assets/css/main.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt="" width="60%"></div>
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="../../login.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div uti-include-html="../../includes/sidebar.html"></div>
+	<!-- sidebar end -->
+  <main id="main" class="main">
+		<section class="section dashboard">
+  <div class="bg-white p-3 border">
+    <div class="row">
+      <div class="col-md-10">
+        <h5>Tour Cancellation</h5>
+      </div>
+      <div class="col-md-2">
+    
+        <input type="text" class="form-control form-control-sm" id="datereq" name="date_req" placeholder="10/05/2022" value="" disabled /><br>
+      </div>
+      <hr>
+    </div>
+        <form>
+           <div class="row">
+            <div class="form-group col-md-3">
+              <label>Tour Number </label>
+              <select class="form-select" id="tnumber" name="t_number" >
+                <option>Select Tour</option>
+                <option>82642</option>
+                <option>82643</option>
+                <option>82644</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Tour From Date</label>
+              <input type="datetime-local" class="form-control" id="tfdate" name="t_f_date" />
+            </div>
+            <div class="form-group col-md-3">
+              <label>Tour to Date</label>
+              <input type="datetime-local" class="form-control" name="ttdate" name="t_t_date" />
+            </div>
+            <div class="form-group col-md-3">
+              <label>Tour Approved</label>
+              <select class="form-select" id="appstatus" name="app_status">
+                <option>Select Option</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Tickets Booked</label>
+              <select class="form-select" id="ticketbooked" name="ticket_booked">
+                <option>Select Option</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Ticket Cancelled </label>
+              <select class="form-select" id="ticketcancel" name="ticket_cancel">
+                <option>Select Option</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Cancellation charges </label>
+              <input type="text" class="form-control" name="cancel_charge" id="cancelcharge">
+            </div>
+            <div class="form-group col-md-3">
+              <label>Tour Advance taken</label>
+              <select class="form-select" id="touradvancedtaken" name="tour_advanced_taken">
+                <option>Select Option</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Tour Advance returned </label>
+              <select class="form-select" id="touradvancedreturnd" name="tour_advanced_returnd">
+                <option>Select Option</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label>Tour Status</label>
+              <select class="form-select" id="tours" name="tour_s">
+                <option>Select Option</option>
+                <option>Open</option>
+                <option>Cancelled</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2 pt-3">
+              <button type="button" class="btn btn-primary mt-1 w-100" id="sbtn" name="s_btn">Submit</button>
+            </div>
+            <div class="form-group col-md-2 pt-3">
+              <button type="button" class="btn btn-primary mt-1 w-100" id="cbtn" name="c_btn">Cancel</button>
+            </div>
+            <div class="form-group col-md-2 pt-3">
+              <button type="button" class="btn btn-primary mt-1 w-100" id="savebtn" name="save_btn">Save</button>
+            </div>
+          </div>
+        </form>
+    <hr />
+    <div class="row">
+      <div class="col-md-6">
+        
+      </div>
+      <!-- <div class="col-md-4 text-end">
+        <a href="" class="btn border" id="freebtn" name="free_btn">Free text</a>
+      </div>
+      <div class="col-md-2 text-right">
+        <select class="form-select" id="actiond" name="action_d">
+          <option>Action</option>
+          <option>Excel</option>
+          <option>PDF</option>
+        </select>
+      </div> -->
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <div class="overflow-auto">
+          <table class="table small border">
+            <tr class="bg-primary text-white">
+              <th scope="col">Sr No</th>
+              <th scope="col">Tour Number</th>
+              <th scope="col">Tour From Date</th>
+              <th scope="col">Tour To Date</th>
+              <th scope="col">Tour Approved</th>
+              <th scope="col">Tickets Booked</th>
+              <th scope="col">Ticket Cancelled</th>
+              <th scope="col">Cancellation charges</th>
+              <th scope="col">Tour Advance taken</th>
+              <th scope="col">Tour Advance returned</th>
+              <th scope="col">Tour Status</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><a href="" id="tnumber" name="t_number">82642</a></td>
+              <td>02052022</td>
+              <td>06052022</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>00.00</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href=""  id="tnumber" name="t_number">82643</a></td>
+                <td>01052022</td>
+                <td>07052022</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>00.00</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+                </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+  <footer id="footer" class="footer">
+    <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong> <script type="text/javascript">
+      var d = new Date();
+      yr = d.getFullYear();
+      document.write(yr);
+    </script>. All Rights Reserved</div>
+  </footer>
+  <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/uti.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+</body>
+</html>

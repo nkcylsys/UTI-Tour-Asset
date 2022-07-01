@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Tour Bill Generation</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../../assets/css/main.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt="" width="60%"></div>
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="../../login.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div uti-include-html="../../includes/sidebar.html"></div>
+	<!-- sidebar end -->
+  <main id="main" class="main">
+		<section class="section dashboard">
+      <div class="bg-white p-3 border">
+        <div class="row pt-2 pb-2">
+          <div class="col-md-12">
+            <div class="row from-group small">
+              <!-- <label class="col-md-5 text-primary" for="">Status : Bill Submitted by Employee</label> -->
+              <label class="col-md-5" for="">Submit Date : 10/05/2022 12:00AM</label>
+              <label class="col-md-2" for="">Tour No :<span class="text-danger"> 82642</span></label>
+            </div>
+          
+            <hr />
+            <p>
+              UTI Asset Management Company Limited Tour Plan / Advance Approval
+              Application
+            </p>
+          </div>
+        </div>
+            <form>
+               <!-- Emp details start -->
+               <div class="row mt-4 small">
+                <div class="form-group col-md-2">
+                  <label>Date of Request :</label>
+                  <input type="number" class="form-control form-control-sm" id="datereq" name="date_req" placeholder="10/05/2022" value="" disabled />
+                </div>
+              </div>
+
+          <hr />
+          <!-- Emp details end -->
+
+              <div class="row mt-2">
+                <div class="form-group col-md-4">
+                  <label>Place From <span class="text-danger">*</span></label>
+                  <input type="text" id="emp1pfrom" name="emp1_p_from" placeholder="Enter Your Emp Place from"  class="form-control" value="Mumbai" disabled />
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Place To <span class="text-danger">*</span></label>
+                  <input type="text" id="emp1pto" name="emp1_p_to" placeholder="Enter Your Emp Place to" class="form-control" value="Delhi" disabled />
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Start Date and Time</label>
+                  <input type="datetime-local" id="startdate" name="start_date"class="form-control" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Probable Return Date and Time:</label>
+                  <input type="datetime-local" name="preturndate" id="p_return_date" class="form-control" />
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label>Total No. of hours</label>
+                  <input type="number" id="emp1totalno" name="emp1_totalno" placeholder="Enter Your Emp Total Hours" class="form-control" value="10" disabled />
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Leave Availed?</label>
+                  <select class="form-select" id="leaveavailable" name="leave_available">
+                    <option>Select Option</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Leave Availed (Yes) from date</label>
+                  <input type="datetime-local" id="lyes" name="l_yes" class="form-control" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Leave Availed (Yes) to date</label>
+                  <input type="datetime-local" id="lyes" name="l_yes" class="form-control" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Leave Availed no. of day:</label>
+                  <select class="form-select" id="purposetour" name="purpose_tour">
+                    <option>Select</option>
+                    <option>.5</option>
+                    <option>1</option>
+                    <option>1.5</option>
+                    <option>2</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Purpose of Tour:</label>
+                  <select class="form-select" id="purposetour" name="purpose_tour">
+                    <option>Select Tour type</option>
+                    <option>Board Meeting</option>
+                    <option>Sales Tour</option>
+                    <option>Company Visit</option>
+                    <option>Transfer</option>
+                    <option>Agent Meeting</option>
+                    <option>Seminar</option>
+                    <option>Functional Training</option>
+                    <option>Behavioral Training</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Pretains to{AMC/Scheme/Others}</label>
+                  <input type="text" id="emp1pretains" name="emp1_pretains" placeholder="Enter Your Emp Pretains" class="form-control" />
+                </div>
+              </div>
+            </form>
+        <hr />
+        <div class="row">
+          <div class="col-md-12">
+            <h5>Details of item 5(Fares)</h5>
+            <hr />
+            <div class="row mt-2">
+              <div class="form-group col-md-3">
+                <label>Date</label>
+                <input
+                  type="date"
+                  id="mydate"
+                  name="my_date"
+                  value="2022-05-10"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group col-md-3">
+                <label>From</label>
+                <input type="text" id="emp1from" name="emp1_from" placeholder="Enter Your Emp Place from" class="form-control" value="Mumbai" disabled />
+              </div>
+
+              <div class="form-group col-md-3">
+                <label>To</label>
+                <input type="text" id="emp1to" name="emp1_to" placeholder="Enter Your Emp Place to" class="form-control" value="Delhi" disabled />
+              </div>
+
+              <div class="form-group col-md-3">
+                <label>Kms</label>
+                <select class="form-select" id="kms" name="k_ms">
+                  <option>Select Option</option>
+                  <option>50</option>
+                  <option>100</option>
+                  <option>150</option>
+                  <option>200</option>
+                  <option>300</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-3">
+                <label>Travel Mode</label>
+                <select class="form-select" id="ttype" name="t_type">
+                  <option>Select Option</option>
+                  <option>Air</option>
+                  <option>Train</option>
+                  <option>buses</option>
+                  <option>On Vehicle</option>
+                  <option>Taxi</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-3">
+                <label>Journey Class</label>
+                <select class="form-select" id="journeyclass" name="journey_class">
+                  <option>Select Option</option>
+                  <option>Business</option>
+                  <option>Economy</option>
+                  <option>First class</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-3">
+                <label>Fare(rs.)</label>
+                <input type="number" id="emp1faree" name="emp1_faree" placeholder="Enter your faree" class="form-control" value="0.00" disabled />
+              </div>
+              <div class="form-group col-md-3">
+                <label>Res/Cancel chrg</label>
+                <input type="number" id="emp1cancelchrg" name="emp1_cancel_chrg" placeholder="Enter your Cancel chrg" class="form-control" value="0.00" disabled/>
+              </div>
+              <div class="form-group col-md-3">
+                <label>CGST in Rs.</label>
+                <input type="number" id="emp1cgst" name="emp1_cgst" placeholder="Enter your CGST No" class="form-control" value="0.00" disabled />
+              </div>
+              <div class="form-group col-md-3">
+                <label>SGST in Rs.</label>
+                <input type="number" id="emp1sgst" name="emp1_sgst" placeholder="Enter your SGST No" class="form-control" value="0.00" disabled />
+              </div>
+              <div class="form-group col-md-3">
+                <label>IGST in RS.</label>
+                <input type="number" id="emp1igst" name="emp1_igst" placeholder="Enter your IGST No" class="form-control" value="0.00" disabled />
+              </div>
+              <div class="form-group col-md-3">
+                <label>Booked by</label>
+                <select class="form-select" id="bookedby" name="booked_by">
+                  <option>Select Option</option>
+                  <option>Travel Desk</option>
+                  <option>Self</option>
+                  <option>Both</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Tax.Rate :</label>
+                <select class="form-select" id="taxrate" name="tax_rate">
+                  <option>Select Option</option>
+                  <option>18%</option>
+                  <option>23%</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Additional Services Name:</label>
+                <input type="text" id="emp1igst" name="emp1_igst" placeholder="" class="form-control" value="" />
+              </div>
+              <div class="form-group col-md-3">
+                <label>Additional Services Charges:</label>
+                <input type="number" id="emp1igst" name="emp1_igst" placeholder="" class="form-control" value="" />
+              </div>
+              <div class="form-group col-md-3">
+                <label>Total Amount :</label>
+                <input type="number" id="emp1igst" name="emp1_igst" placeholder="" class="form-control" value="4000.00" disabled />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h5>Details of items 6(Converyance Charges)</h5>
+            <hr />
+            <div class="row mt-3">
+              <div class="col-md-12">
+                <div class="overflow-auto">
+                  <table class="table small border">
+                    <tr class="bg-primary text-white">
+                      <th scope="col">Sr No</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">From</th>
+                      <th scope="col">To</th>
+                      <th scope="col">Approx Distance</th>
+                      <th scope="col">Mode of Conveyance</th>
+                      <th scope="col">Charges Paid(Rs)</th>
+                      <th scope="col">Remarks</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>10/05/2022</td>
+                      <td>RESIDENCE</td>
+                      <td>AIRPORT</td>
+                      <td>20km</td>
+                      <td>Taxi</td>
+                      <td>512.00</td>
+                      <td>xyz</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h5>Details of item 7, 8a & 8b</h5>
+            <hr />
+            <div class="row mt-2">
+              <div class="form-group col-md-2">
+                <label>Place of Tour</label>
+                <input type="text" id="emp1ptour" name="emp1_p_tour" placeholder="Enter your Place Of Tour Name" class="form-control" value="Delhi" disabled />
+              </div>
+              <div class="form-group col-md-2">
+                <label>From Date & Time</label>
+                <input type="datetime-local" id="fdate" name="f_date" placeholder=""class="form-control" />
+              </div>
+              <div class="form-group col-md-2">
+                <label>To Date & Time</label>
+                <input type="datetime-local" id="todate" name="to_date" class="form-control" />
+              </div>
+              <div class="form-group col-md-2">
+                <label>Days</label>
+                <input type="number" id="emp1tday" name="emp1_tday" placeholder="Enter your Total Days" class="form-control" value="3" disabled />
+              </div>
+              <div class="form-group col-md-2">
+                <label>Hours</label>
+                <input type="number" id="emp1_hours" name="emp1_hours" placeholder="Enter your Total Hours" class="form-control" value="15" disabled/>
+              </div>
+              <div class="form-group col-md-2">
+                <label>Accom Arrange By</label>
+                <select class="form-select" name="arrangeby" id="arrange_by">
+                  <option>Select Tour type</option>
+                  <option>Hotel</option>
+                  <option>Guest Houses</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label>Faree(rs.)</label>
+                <input type="number" id="emp1faree1" name="emp1_faree1" placeholder="please Enter your Faree" class="form-control" value="0.00" disabled />
+              </div>
+              <div class="form-group col-md-2">
+                <label>CGST in Rs.</label>
+                <input type="number" id="emp1cgst1" name="emp1_cgst1" placeholder="Enter your CGST No" class="form-control" value="0.00" disabled/>
+              </div>
+              <div class="form-group col-md-2">
+                <label>SGST in Rs.</label>
+                <input type="number" id="emp1sgst1" name="emp1_sgst1" placeholder="Enter your SGST No" class="form-control" value="0.00" disabled />
+              </div>
+              <div class="form-group col-md-2">
+                <label>IGST in Rs.</label>
+                <input type="number" id="emp1_igst1" name="emp1_igst1" placeholder="Enter your IGST No" class="form-control" value="0.00" disabled />
+              </div>
+              <div class="form-group col-md-2">
+                <label>Hotel Name</label>
+                <input type="text" id="emp1hotelname" name="emp1_hotel_name" placeholder="Enter your Hotel Name" class="form-control" value="Taj Hotel" disabled />
+              </div>
+              <div class="form-group col-md-2">
+                <label>GSTIN No.</label>
+                <input type="number" id="emp1gstin" name="emp1_gstin" placeholder="Enter your GSTIN No" class="form-control" value="8997858598" disabled/>
+              </div>
+              <div class="form-group col-md-2">
+                <label>PAN No.</label>
+                <input type="text" id="emp1pan" name="emp1pan" placeholder="Enter your Pan No" class="form-control" value="EFRPK4763" disabled/>
+              </div>
+              <div class="form-group col-md-2">
+                <label>Invoice No.</label>
+                <input type="number" id="emp1invoice" name="emp1_invoice" placeholder="Enter your Invoice No" class="form-control" value="45827" disabled />
+              </div>
+              <div class="form-group col-md-2">
+                <label>Date</label>
+                <input
+                  type="date"
+                  id="mydate"
+                  name="mydate"
+                  value="2022-05-10"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group col-md-2">
+                <label>Tax.Rate :</label>
+                <select class="form-select" id="textrate" name="text_rate">
+                  <option>Select Option</option>
+                  <option>18%</option>
+                  <option>23%</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label>Address:</label>
+                <input type="text" id="emp1_address" name="emp1_address" placeholder="Enter your Address" class="form-control" value="Lucknow" disabled/>
+              </div>
+              
+              <div class="form-group col-md-3">
+                <label>Additional Services Name:</label>
+                <input type="text" id="emp1igst" name="emp1_igst" placeholder="" class="form-control" value="" />
+              </div>
+              <div class="form-group col-md-3">
+                <label>Additional Services Charges:</label>
+                <input type="number" id="emp1igst" name="emp1_igst" placeholder="" class="form-control" value="" />
+              </div>
+              <div class="form-group col-md-6">
+                 </div>
+              <div class="form-group col-md-3">
+                <label>Total Amount :</label>
+                <input type="number" id="emp1igst" name="emp1_igst" placeholder="" class="form-control" value="4000.00" disabled />
+              </div>
+              <div class="form-group col-md-6">
+                </div>
+              <div class="form-group col-md-3">
+                <label>Grand Total Amount :</label>
+                <input type="number" id="emp1igst" name="emp1_igst" placeholder="" class="form-control" value="8512.00" disabled />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <h5>Upload document</h5>
+            <hr />
+            <div class="row mt-2">
+              <div class="col-md-2"><select class="form-select" id="uploaddoc" name="upload_doc">
+                <option>Select Document</option>
+                <option>Hotel Ticket</option>
+                <option>Guest Houses Bills</option>
+                <option>Boarding Pass</option>
+                <option>Car Bill</option>
+                <option>Fast Track Bills</option>
+                <option>Car Parking Bills</option>
+                <option>Toll Charges</option>
+                <option>Other</option>
+              </select>
+            </div>
+              <div class="col-md-4"><input class="form-control" type="file" id="form_file" name="form_file"></div>
+              <div class="col-md-6"><button type="button" class="btn btn-primary mb-2">
+                Add</button></div>
+                <div class="">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-secondary" id="airticket" name="air_ticket">Boarding Pass <span>x</span></button>
+                  <button type="button" class="btn btn-secondary" id="gbill" name="g_bill">Guest Houses Bills <span>x</span></button>
+                  <button type="button" class="btn btn-secondary" id="hotelticket" name="hotel_ticket">Hotel Ticket <span>x</span></button>
+                </div>
+                <br>
+            </div>
+          </div>
+        </div>
+        
+         <hr>
+
+        <div class="row mt-4">
+          <div class="form-group col-md-2 mt-3">
+            <button type="button" class="btn btn-primary w-100 mb-2" id="submitb" name="submit_b">
+            Submit</button>
+          </div>
+          <div class="form-group col-md-2 mt-3">
+            <button type="button" class="btn btn-primary w-100 mb-2" id="saveb" name="save_b">
+            Save</button>
+          </div>
+          <div class="form-group col-md-2 mt-3">
+            <button type="button" class="btn btn-primary w-100 mb-2" id="cnlb" name="cnl_b">
+            Cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+	</main>
+    <footer id="footer" class="footer">
+      <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong> <script type="text/javascript">
+        var d = new Date();
+        yr = d.getFullYear();
+        document.write(yr);
+      </script>. All Rights Reserved</div>
+    </footer>
+    <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/uti.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+  </body>
+</html>

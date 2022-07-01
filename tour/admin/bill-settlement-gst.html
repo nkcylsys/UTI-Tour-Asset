@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Bill Settlement</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../../assets/css/main.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt="" width="60%"></div>
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="../../login.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div uti-include-html="../../includes/sidebar.html"></div>
+	<!-- sidebar end -->
+  <main id="main" class="main">
+  <div class="bg-white p-3 border">
+    <div class="row pt-2 pb-2">
+    <div class="col-md-12">
+      <h5>Bill Settlement(GST) New</h5>
+      <p>Enter any information you have and click Search Leave fields blank for a list of all values.</p>
+    <hr>
+    </div>
+     </div>
+      <form>
+        <div class="row">
+          <div class="form-group col-md-3">
+            <label for="exampleInputEmail1">Emp_ID</label>
+            <input type="text" class="form-control" id="billempid" name="bill_empid" aria-describedby="emailHelp" >
+            <input type="checkbox"> Include History
+          </div>
+          <div class="form-group col-md-3">
+            <label for="exampleInputEmail1">Tour Number</label>
+            <input type="number" class="form-control" id="billtourno" name="bill_tourno" aria-describedby="emailHelp" >
+            <input type="checkbox"> Correct History
+          </div>
+          <div class="form-group col-md-3">
+            <label for="exampleInputEmail1">Date Of Settlement</label>
+            <input type="date" class="form-control" id="billdate" name="bill_date" aria-describedby="emailHelp" >
+          </div>
+          <div class="form-group col-md-2">
+            <label for="exampleInputEmail1">Settlement status</label>
+            <input type="date" class="form-control" id="billstatus" name="bill_status" aria-describedby="emailHelp" >
+          </div>
+          <div class="col-md-1 p-1"> <a href="" class="btn btn-primary mt-3">Search</a> </div>
+          <!-- <div class="col-md-1">  <a href="" class="btn btn-light border abc4">Clear</a> </div> -->
+        </div>
+      </form>
+   <hr>
+   <!-- <div class="row">
+    <div class=" col-md-10 text-end"> <a href="#" id="btnfree" name="btn_freetext" class="btn border">Free text</a> </div>
+    <div class=" col-md-2"> <select class="form-select">
+      <option>Action</option>
+      <option>Excel</option>
+      <option>PDF</option>
+    </select> </div></div> -->
+  
+   <div class="row mt-3">
+    <div class="col-md-12">
+      <div class="overflow-auto">
+        <table class="table small border">
+          <tr class="bg-primary text-white">
+          	<th scope="col">Sr No</th>
+            <th scope="col">Empl ID</th>
+            <th scope="col">Tour Number</th>
+            <th scope="col">Tour Bill</th>
+            <th scope="col">Submitted Date</th>
+            <th scope="col">Tour Type</th>
+            <!-- <th scope="col">Date of statement</th> -->
+            <th scope="col">Status</th>
+          </tr>
+          <tr>
+          	<td>1</td>
+            <td>2716</td>
+            <td><a href="tour-bill-for-confirmation.html">82642</a></td>
+            <td>Blank</td>
+            <td>	10/05/2022</td>
+            <td>Sales Meeting</td>
+            <!-- <td>Blank</td> -->
+            <td>Empl submitted tour bill</td>
+          </tr>
+          <tr>
+          	<td>2</td>
+            <td>2717</td>
+            <td><a href="tour-bill-for-confirmation.html">82740</a></td>
+            <td>Blank</td>
+            <td>11/05/2022</td>
+            <td>Sales Meeting</td>
+            <!-- <td>Blank</td> -->
+            <td>Empl submitted tour bill</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+  <footer id="footer" class="footer">
+    <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong> <script type="text/javascript">
+      var d = new Date();
+      yr = d.getFullYear();
+      document.write(yr);
+    </script>. All Rights Reserved</div>
+  </footer>
+  <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/uti.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+</body>
+</html>

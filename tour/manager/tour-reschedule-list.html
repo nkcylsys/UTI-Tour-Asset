@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Tour Reschedule list</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="../../assets/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/css/main.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <i class="toggle-sidebar-btn pe-2">
+          <span class="fa fa-align-justify text-white"></span> </i
+        ><img src="../../assets/images/logo_1.png" alt="" width="60%" />
+      </div>
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item dropdown pe-4">
+            <a
+              class="nav-link dropdown-toggle text-white small"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >User</a
+            >
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="../../login.html"
+                  ><i class="fa fa-sign-out"></i> <span>Logout</span></a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- sidebar start -->
+    <div uti-include-html="../../includes/sidebar.html"></div>
+    <!-- sidebar end -->
+    <main id="main" class="main">
+      <section class="section dashboard">
+        <div class="bg-white p-3 border">
+            <div class="row">
+                <div class="col-md-10">
+                  <h5>Tour Reschedule List</h5>
+                </div>
+                <div class="col-md-2">
+                 
+                        <input type="text" class="form-control form-control-sm" id="datereq" name="date_req" placeholder="10/05/2022" value="" disabled /><br>
+                </div>
+                <hr>
+              </div>
+            <form>
+                <div class="row">
+                  <div class="form-group col-md-3">
+                    <input type="number" class="form-control" placeholder="Tour Number"/>
+                   
+                    <input type="checkbox"> Include History
+                  </div>
+                  <div class="form-group col-md-3">
+                    <select class="form-select" id="tourrequeststatus" name="tour_request_status">
+                      <option>Select Tour Request Status</option>
+                      <option>Pending</option>
+                      <option>Approved</option>
+                      <option>Rejected</option>
+                    </select>
+                    <input type="checkbox" id="includehistory" name="include_history"> Include History
+                  </div>
+                  <div class="col-md-2"> <a href="#" id="btnsearch" name="btn_search" class="btn btn-primary w-100 mb-2">Search</a> </div>
+                  </div>
+               
+              </form>
+          <hr>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="overflow-auto">
+                <table class="table small border">
+                  <tr class="bg-primary text-white">
+                    <th scope="col">Sr No</th>
+                    <th scope="col">Tour Number</th>
+                    <th scope="col">Tour From Date</th>
+                    <th scope="col">Tour To Date</th>
+                    <th scope="col">Tour Approved</th>
+                    <th scope="col">Tickets Booked</th>
+                    <th scope="col">Ticket Cancelled</th>
+                    <th scope="col">Tour Advance taken</th>
+                    <th scope="col">Tour Advance returned</th>
+                    <th scope="col">Tour Status</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><a href="tour-reschedule-aprovel-form.html" id="tnumber" name="t_number">82642</a></td>
+                    <td>14/05/2022</td>
+                    <td>18/05/2022</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>yes</td>
+                    <td>Yes</td>
+                    <td>-</td>
+                    <td>Pending</td>
+                  </tr>
+                 
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>UTI</span></strong>
+        <script type="text/javascript">
+          var d = new Date();
+          yr = d.getFullYear();
+          document.write(yr);
+        </script>
+        . All Rights Reserved
+      </div>
+    </footer>
+    <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/uti.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+  </body>
+</html>

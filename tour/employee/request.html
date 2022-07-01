@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Tour Request</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../../assets/css/main.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt="" width="60%"></div>
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="../../login.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div uti-include-html="../../includes/sidebar.html"></div>
+	<!-- sidebar end -->
+  <main id="main" class="main">
+		<section class="section dashboard">
+    <div class="bg-white p-3 border">
+      <div class="row pt-2 pb-2">
+        <div class="col-md-12">
+          <h5>Show Tour Request Details</h5>
+          <hr>
+          <p>Enter any information you have and click Search Leave fields blank for a list of all values.</p>
+        </div>
+      </div>
+          <form>
+            <div class="row mt-2">
+              <div class="form-group col-md-3">
+                <input type="number" class="form-control" placeholder="Tour Number"/>
+               
+                <input type="checkbox"> Include History
+              </div>
+              <div class="form-group col-md-3">
+                <select class="form-select" id="tourrequeststatus" name="tour_request_status">
+                  <option>Select Tour Request Status</option>
+                  <option>Pending</option>
+                  <option>Approved</option>
+                  <option>Rejected</option>
+                </select>
+                <input type="checkbox" id="includehistory" name="include_history"> Include History
+              </div>
+              <div class="col-md-2"> <a href="#" id="btnsearch" name="btn_search" class="btn btn-primary w-100 mb-2">Search</a> </div>
+              <!-- <div class="col-md-2"> <a href="new-request.html" id="btnadd" name="btn_add" class="btn btn-primary w-100">Add Request</a> -->
+              </div>
+            </div>
+          </form>
+      <hr>
+      <!-- <div class="row text-end">
+        <div class=" col-md-10"> <a href="" class="btn border mb-2">Free text</a> </div>
+        <div class=" col-md-2"> <select class="form-select" name="action_d" id="actiond">
+            <option>Action</option>
+            <option>Excel</option>
+            <option>PDF</option>
+          </select>
+        </div>
+      </div> -->
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <div class="overflow-auto">
+            <table class="table small border">
+              <tr class="bg-primary text-white">
+                <th scope="col">Sr No</th>
+                <th scope="col">Emp ID</th>
+                <th scope="col">Tour Number</th>
+                <th scope="col">Tour Bill</th>
+                <th scope="col">Submitted Date</th>
+                <th scope="col">Tour Type</th>
+                <!-- <th scope="col">Date of Statement</th> -->
+                <th scope="col">Status</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2716</td>
+                <td><a href="#" id="tournumber" name="tour_number">82642</a></td>
+                <td> - </td>
+                <td>02/06/2022</td>
+                <td>Sales Tour</td>
+                <!-- <td> - </td> -->
+                <td>Bill pending for Approval</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2716</td>
+                <td><a href="#" id="tournumber" name="tour_number">82643</a></td>
+                <td> - </td>
+                <td>06/06/2022</td>
+                <td>Sales Tour</td>
+                <!-- <td> - </td> -->
+                <td>Bill pending for Approval</td>
+              </tr>
+              <tr>
+                <td colspan="8" class="text-danger text-center" id="msg" name="msg_t">No data found</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer id="footer" class="footer">
+    <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong> <script type="text/javascript">
+      var d = new Date();
+      yr = d.getFullYear();
+      document.write(yr);
+    </script>. All Rights Reserved</div>
+  </footer>
+  <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/uti.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+</body>
+</html>

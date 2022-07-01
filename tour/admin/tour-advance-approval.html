@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Tour Advance Approval</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../../assets/css/main.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt="" width="60%"></div>
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="../../login.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div uti-include-html="../../includes/sidebar.html"></div>
+	<!-- sidebar end -->
+  <main id="main" class="main">
+		<section class="section dashboard">
+  <div class="bg-white p-3 border">
+    <div class="row pt-2 pb-2">
+    <div class="col-md-12">
+      <h5>Tour Advance Approval</h5>
+    </div>
+     </div>
+   <div class="row">
+    <div class="col-md-8">
+    </div>
+   </div>
+   <hr>
+   <div class="row">
+    <div class="col-md-8"></div>
+     <!-- <div class="col-md-2 text-end"><a href="calender.html" class="btn btn-primary w-100">Calender</a> </div> -->
+    <!-- <div class=" col-md-2 text-end"><a href="" class="btn border w-100">Free text</a> </div>
+    <div class=" col-md-2"> <select class="form-select">
+      <option>Action</option>
+      <option>Excel</option>
+      <option>PDF</option>
+    </select> </div> -->
+  </div>
+  
+   <div class="row mt-3">
+    <div class="col-md-12">
+      <div class="overflow-auto">
+        <table class="table small border">
+          <tr class="bg-primary text-white">
+          	<th scope="col">Sr No</th>
+            <th scope="col">Emp  ID</th>
+            <th scope="col">Emp Name</th>
+            <th scope="col">Tour Type</th>
+            <th scope="col">Tour Number</th>
+            <th scope="col">Date of Request</th>
+            <th scope="col">Date of Approval</th>
+            <th scope="col">From Date</th>
+            <th scope="col">To Date</th>
+           <th scope="col">Place Of Tour</th>
+            <th scope="col">Curr Type INR/USD</th>
+            <th scope="col">Adv Amt Request(INR)</th>
+            <th scope="col">Bank Transfer Yes/No</th>
+            <th scope="col">Adv Amount Sanctioned</th>
+            <th scope="col">Adv Amt Sanctioned</th>
+            <th scope="col">Reject</th>
+            <th scope="col">Previous Paid (In Rs.)
+            </th>
+          </tr>
+          <tr>
+          	<td>1</td>
+            <td>2716</td>
+            <td>Kamal Sharma</td>
+            <td>Sales Tour</td>
+            <td>82642</td>
+            <td>10/05/2022</td>
+            <td><input type="date" class="form-control"></td>
+            <td>28/05/2022</td>
+            <td>30/05/2022</td>
+            <td>Delhi</td>
+            <td>INR</td>
+              <td>5000.00</td>
+              <td></td>
+            <td><input type="number" id="tourno" name="tour_no" class="form-control"></td>
+            <td> <input type="checkbox" id="vehicle1" name="vehicle_1" value="Bike"><br></td>
+            <td> <input type="checkbox" id="vehicle2" name="vehicle_2" value="Bike"><br></td>
+            <td>Prev Paid(Rs)</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2317</td>
+            <td>Mukesh</td>
+            <td>Sales Tour</td>
+            <td>82643</td>
+            <td>11/05/2022</td>
+            <td><input type="date" class="form-control"></td>
+            <td>03/06/2022</td>
+            <td>05/06/2022</td>
+            <td>Delhi</td>
+            <td>INR</td>
+            <td>7000.00</td>
+            <td></td>
+            <td><input type="number" id="tourno1" name="tour_no1" class="form-control"></td>
+            <td> <input type="checkbox" id="vehicle3" name="vehicle_3" value="Bike"><br></td>
+            <td> <input type="checkbox" id="vehicle4" name="vehicle_4" value="Bike"><br></td>
+            <td>Prev Paid(Rs)</td>
+          </tr>
+        </table>
+      </div>
+       <div><button type="button" id="subbtn" name="sub_btn" onclick="location.href='release-tour-adv-summary.html';" class="btn btn-primary float-right">Submit</button></div> 
+    </div>
+  </div>
+</div>
+</section>
+</main>
+  <footer id="footer" class="footer">
+    <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong> <script type="text/javascript">
+      var d = new Date();
+      yr = d.getFullYear();
+      document.write(yr);
+    </script>. All Rights Reserved</div>
+  </footer>
+  <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/uti.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>UTI</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../../assets/css/main.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+   
+</head>
+<body>
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt="" width="60%"></div>
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="login.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div uti-include-html="../../includes/sidebar.html"></div>
+	<!-- sidebar end -->
+  <main id="main" class="main">
+        <div class="bg-white p-3 border">
+            <div class="row pt-2 pb-2">
+                <div class="col-md-12">
+                    <h5>Certification Of Fixed Assets :</h5>
+                    <hr>
+                </div>
+            </div>
+            <form>
+                <!-- Assets details start -->
+                <div class="row small">
+                    <div class="form-group col-md-3">
+                        <label>Assets No. :</label>
+                        <input type="text" class="form-control form-control-sm" id="assetnumber" name="asset_number"
+                            placeholder="Asset Number" value="" />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>YEAR :</label>
+                        <input type="text" class="form-control form-control-sm" id="year" name="year"
+                            placeholder="Enter  Asset Number" value="" />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Asset Location Code :</label>
+                        <input type="text" class="form-control form-control-sm" id="assetlocation" name="asset_location"
+                            placeholder="Type Location Here" value="" />
+                    </div>
+                    <div class="form-group col-md-1 pt-3 mb-2">
+                        <button type="button" class="btn btn-primary w-400" id="costcenter" name="submit"
+                            data-bs-target="#exampleModal">
+                            Search</button>
+                    </div>
+
+                    <div class="form-group col-md-1 pt-3 mb-2">
+                        <button type="button" class="btn btn-primary w-400" id="submit" name="submit"
+                            data-bs-target="#exampleModal">
+                            Clear</button>
+                        
+
+                    </div>
+                    
+                    <!-- <hr /> -->
+                    <!-- <div class="container mt-2 mb-2">
+                        <button type="button" class="btn btn-primary ml-2" style="width:200px">Basic Saerch</button>
+                        <button type="button" class="btn btn-primary ml-2" style="width:200px">Save Saerch Criteria</button>
+                        <button type="reset" class="btn btn-light ml-2" style="width:200px">Refresh</button>
+                    </div> -->
+            </form>
+            <hr>
+
+            <!-- <h3>Search Results :</h3>
+            <a href="#">View All</a> -->
+            <!-- Table -->
+            <div class="container">
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="overflow-auto">
+                            <table class="table small border">
+                                <tr class="bg-primary text-white">
+                                    <th scope="col">Year</th>
+                                    <th scope="col">Cost Center</th>
+                                    <th scope="col">Departement</th>
+                                    <th scope="col">E&F Cert.Status</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">O.E_Cert Status</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">By</th>
+                                </tr>
+                                <tr>
+                                    <td><a href="certification-of-it-fixed-asset.html">2022</a></td>
+                                    <td>1001</td>
+                                    <td>Corporate Office</td>
+                                    <td>DEM</td>
+                                    <td>(blank)</td>
+                                    <td>DEM</td>
+                                    <td>(blank)</td>
+                                    <td>(blank)</td>
+                                </tr>
+                                <tr>
+                                     <td><a href="certification-of-it-fixed-asset.html">2022</a></td>
+                                    <td>1001</td>
+                                    <td>Corporate Office</td>
+                                    <td>DEM</td>
+                                    <td>(blank)</td>
+                                    <td>DEM</td>
+                                    <td>(blank)</td>
+                                    <td>(blank)</td>
+                                </tr>
+                                <tr>
+                                     <td><a href="certification-of-it-fixed-asset.html">2022</a></td>
+                                    <td>1001</td>
+                                    <td>Corporate Office</td>
+                                    <td>DEM</td>
+                                    <td>(blank)</td>
+                                    <td>DEM</td>
+                                    <td>(blank)</td>
+                                    <td>(blank)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Table end -->
+
+            <!-- pagination -->
+            <!-- <nav aria-label="Page navigation example" style="margin-left: 1050px;">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav> -->
+            <!-- end pagination -->
+        </div>
+    </div>
+    <footer class="footer">
+        Copyright © UTI
+        <script type="text/javascript">
+            var d = new Date();
+            yr = d.getFullYear();
+            document.write(yr);
+        </script>
+ </main>
+ <footer id="footer" class="footer">
+   <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong> <script type="text/javascript">
+     var d = new Date();
+     yr = d.getFullYear();
+     document.write(yr);
+   </script>. All Rights Reserved</div>
+ </footer>
+ <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+ <script src="../../assets/js/main.js"></script>
+ <script src="../../assets/js/uti.js"></script>
+ <script src="../../assets/js/custom.js"></script>
+</body>
+</html>

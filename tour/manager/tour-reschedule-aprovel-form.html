@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Tour Reschedule</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../../assets/css/main.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt="" width="60%"></div>
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="../../login.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div uti-include-html="../../includes/sidebar.html"></div>
+	<!-- sidebar end -->
+  <main id="main" class="main">
+		<section class="section dashboard">
+    <div class="bg-white p-3 border">
+      <div class="row">
+        <div class="col-md-10">
+          <h5>Tour Reschedule</h5>
+        </div>
+        <div class="col-md-2">
+                <input type="text" class="form-control form-control-sm" id="datereq" name="date_req" placeholder="10/05/2022" value="" disabled /><br>
+        </div>
+        <hr>
+      </div>
+      <form>
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label>Tour Number </label>
+            <input type="text" class="form-control" id="tournumber" name="tour_number" value="82642" disabled>
+          </div>
+          <div class="form-group col-md-4">
+            <label>Tour From Date</label>
+            <input type="text" class="form-control" id="tfdate" name="t_f_date" value="02/05/2022" disabled/>
+          </div>
+          <div class="form-group col-md-4">
+            <label>Tour to Date</label>
+            <input type="text" class="form-control" id="ttdate" name="t_t_date" value="06/05/2022" disabled />
+          </div>
+          <div class="form-group col-md-4">
+            <label>Tour Approved</label>
+            <input type="text" class="form-control" id="tapproved" name="t_approved" value="yes" disabled />
+           
+          </div>
+          <div class="form-group col-md-4">
+            <label>Tickets Booked</label>
+            <input type="text" class="form-control" id="ticketbooked" name="ticket_booked" value="yes" disabled />
+            
+          </div>
+          <div class="form-group col-md-4">
+            <label>Ticket Route Booked Reschedule </label>
+            <input type="text" class="form-control" id="trbreshedule" name="t_r_b_reshedule" value="yes" disabled />
+            
+          </div>
+          <div class="form-group col-md-4">
+            <label>Partial Reschedule</label>
+            <input type="text" class="form-control" id="partialreshedule" name="partialreshedule" value="yes" disabled />
+          </div>
+          <div class="form-group col-md-4">
+            <label>Original Ticket Route</label>
+            <input type="text" class="form-control" id="originalticketroute" name="original_ticket_route" value="Delhi" disabled />
+          </div>
+          <div class="form-group col-md-4">
+            <label>Cancelling Ticket Route</label>
+            <input type="text" class="form-control" id="ctroute" name="c_t_route" value="Delhi" disabled />
+          </div>
+          <div class="form-group col-md-4">
+            <label>Ticket Cancelled </label>
+            <input type="text" class="form-control" id="ticketc" name="ticket_c" value="Yes" disabled />
+          </div>
+          <div class="form-group col-md-4">
+            <label>New Route </label>
+            <input type="text" class="form-control" id="newroute" name="new_route" value="Banglore" disabled />
+          </div>
+          <div class="form-group col-md-4">
+            <label>Tour Status</label>
+            <input type="text" class="form-control" id="ticketbs" name="ticket_b_s" value="Open" disabled />
+          </div>
+          <div class="col-md-9"></div>
+
+          <div class="col-md-12">
+            <hr>
+            <h5 class="mb-4">Full Reschedule </h5><hr>
+          </div>
+          <div class="form-group col-md-3">
+            <label>Old Tour From Date</label>
+            <input type="text" class="form-control" id="otourfdate" name="o_tourf_date" value="02/05/2022" disabled />
+          </div>
+          <div class="form-group col-md-3">
+            <label>Old Tour New Date</label>
+            <input type="text" class="form-control" id="otournewdate" name="o_tour_new_date" value="14/05/2022" disabled />
+          </div>
+          <div class="form-group col-md-3">
+            <label>Tickets booked</label>
+            <input type="text" class="form-control" id="ticketsbooked" name="tickets_booked" value="yes" disabled />
+          </div>
+          <div class="form-group col-md-3">
+            <label>Ticket Cancelled </label>
+            <input type="text" class="form-control" id="t_cancel" name="tickets_booked" value="yes" disabled />
+            
+          </div>
+          <div class="form-group col-md-3">
+            <label>Cancellation Charges </label>
+            <input type="text" class="form-control" id="cancelcharge" name="cancel_charge" value="No" disabled />
+          </div>
+          <div class="form-group col-md-3">
+            <label>New Tour From Date</label>
+            <input type="text" class="form-control" id="newtourfdate" name="new_tour_f_date" value="14/05/2022" disabled />
+          </div>
+          <div class="form-group col-md-3">
+            <label>New Tour to Date</label>
+            <input type="text" class="form-control" id="newtourtdate" name="new_tour_t_date" value="18/05/2022" disabled />
+          </div>
+          <div class="form-group col-md-3">
+            <label>Ticket Booked </label>
+            <input type="text" class="form-control" id="tbooked" name="t_booked" value="yes" disabled />
+          </div>
+
+
+          <div class="form-group col-md-4 pt-4">
+            <button type="button" class="btn btn-primary mt-2 w-100" data-bs-toggle="modal" data-bs-target="#Modal" id="aprovebtn" name="a_btn">Approve Tour Reschedule Request</button>
+          </div>
+          <div class="form-group col-md-4 pt-4">
+            <button type="button" class="btn btn-primary mt-2 w-100" data-bs-toggle="modal" data-bs-target="#Modal1" id="rejectbtn" name="r_btn">Reject Tour Reschedule Request</button>
+          </div>
+
+           <!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Tour Request</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are You Sure. You want to Approve Tour Reschedule Request?
+      </div>
+      <div class="modal-footer">
+        <button onclick="window.location.href='/../index.html'" type="button" id="btn_ok" name="btnok" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Ok</button>
+        <button type="button" id="btn_cnl2" class="btn btn-secondary" data-bs-dismiss="modal"  name='btnclose' ="btn_close" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal -->
+ <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Tour Request</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal1" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are You Sure. You want to Reject Tour Reschedule Request?
+      </div>
+      <div class="modal-footer">
+        <button onclick="window.location.href='/../index.html'" type="button" id="btn_ok" name="btnok" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Ok</button>
+        <button type="button" id="btn_cnl2" class="btn btn-secondary" data-bs-dismiss="modal"  name='btnclose' ="btn_close" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+  <footer id="footer" class="footer">
+    <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong> <script type="text/javascript">
+      var d = new Date();
+      yr = d.getFullYear();
+      document.write(yr);
+    </script>. All Rights Reserved</div>
+  </footer>
+  <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/uti.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+</body>
+</html>

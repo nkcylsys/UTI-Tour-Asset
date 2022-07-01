@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Register Assets Or Update Assets</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="../../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../../assets/css/main.css" rel="stylesheet">
+    <link href="../../../assets/css/style.css" rel="stylesheet">
+    <link href="../../../../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span
+                    class="fa fa-align-justify text-white"></span> </i><img src="../../../assets/images/logo_1.png" alt="" width="60%"></div>
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+                <li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li><a class="dropdown-item d-flex align-items-center" href="../../../login.html"><i
+                                    class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- sidebar start -->
+    <div uti-include-html="../../../includes/sidebar.html"></div>
+    <!-- sidebar end -->
+    <main id="main" class="main">
+        <div class="bg-white p-3 border">
+            <div class="row pt-2 pb-2">
+                <div class="col-md-12">
+                    <h5>Register Assets Or Update Assets :</h5>
+                    <hr>
+                </div>
+            </div>
+            <form>
+                <!-- Assets details start -->
+                <div class="row mt-4 small">
+                    <div class="form-group col-md-3">
+                        <label>Assets No. :</label>
+                        <input type="text" class="form-control form-control-sm" id="assetnumber" name="asset_number" placeholder="" value="JNJD0X2" />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Alternate Number :</label>
+                        <input type="text" class="form-control form-control-sm" id="altnumber" name="alt_number" placeholder="" value="505476" />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Asset Location :</label>
+                        <input type="text" class="form-control form-control-sm" id="assetlocation" name="asset_location" placeholder="Type Location Here" value="" />
+                    </div>
+                    <div class="form-group col-md-3 pt-3">
+                        <button type="button" class="btn btn-primary w-100 mb-2" id="submit" name="submit" data-bs-target="#exampleModal">
+                            Search</button>
+
+                    </div>
+                    <hr />
+                    <!-- Assets details end -->
+                    <div class="row mt-2">
+                        <div class="form-group col-md-3">
+                            <label>Assets Type </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select</option>
+                                <option value="1">Laptop</option>
+                                <option value="2">Desktop</option>
+                            </select>    
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Model :</label>
+                            <input type="" class="form-control" id="model" name="model" placeholder="" value="Dell E5490 LAT" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Make :</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Lenovo</option>
+                                <option value="1">Dell</option>
+                                <option value="2">HP</option>
+                                <option value="3">Lenovo</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Vendor Name :</label>
+                            <input type="text" class="form-control" id="vendorname" name="vendor_name" placeholder="" value="GLAXY OFFICE AUTOMATION PVT LTD" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Description :</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" name="vendor_name" placeholder="" value="i5 intel core,500 GB HDD,8Gb Ram" />
+                            <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="1">i5 intel core,500 GB HDD,8Gb Ram  </textarea> -->
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Accessories :</label>
+                            <input type="text" class="form-control" id="accname" name="acc_name" placeholder="" value="ADAPTOR,BAG AND LAPTOP" />
+                        </div>
+                       
+                    
+
+                        <div class="form-group col-md-3">
+                            <label>P.O. Number :</label>
+                            <input type="text" class="form-control" name="po_number" id="ponumber" placeholder="" value="3900/19-20" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Procurement Year :</label>
+                            <input type="text" class="form-control" name="p_year" id="pyear" placeholder="" value="2019" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Dept.ID :</label>
+                            <input type="text" class="form-control" name="d_id" id="did" placeholder="" value="DOAA-IT" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>P.O. Date :</label>
+                            <input type="text" class="form-control" name="po_date" id="podate" placeholder="" value="25/05/2022" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Warranty Expiry Date :</label>
+                            <input type="text" class="form-control" name="w_date" id="w_date" placeholder="" value="01/02/2024" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Date of Installation :</label>
+                            <input type="text" class="form-control" name="date_installation" id="dateinstallation" placeholder="" value="12/02/2022" />
+                        </div>
+                
+                        <div class="form-group col-md-3">
+                            <label>Date of Deliver :</label>
+                            <input type="text" class="form-control" name="date_deliver" id="datedeliver" placeholder="" value="12/02/2022" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Movable ?</label>
+                            <select class="form-select" aria-label="Default select example" name="movable">
+                                <option selected>Yes</option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Company CD :</label>
+                            <select class="form-select" aria-label="Default select example" name="companycd">
+                                <option selected>UTI AMC</option>
+                                <option value="1">UTI AMC</option>
+                                <option value="2">OTHERS</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+
+                            <label>Cost of Assets (RS) :</label>
+                            <input type="text" class="form-control" name="cost" id="cost" placeholder="" value="49800.00" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Status :</label>
+                            <select class="form-select" aria-label="Default select example" name="status">
+                                <option selected>Option</option>
+                                <option value="1">Custody</option>
+                                <option value="2">Disposed OfF</option>
+                                <option value="3">Donated</option>
+                                <option value="4">In Use</option>
+                                <option value="5">Lost</option>
+                                <option value="6">Not In Use</option>
+                                <option value="7">Other</option>
+                                <option value="8">To Be Disposed</option>
+                                <option value="9">To Be Replaced</option>
+                                <option value="10">Wrriten Off</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>  
+            </form>
+
+            <hr>
+            <!-- accordian start 1 -->
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Constractor/Serviece Provider for /AMC/FMS/Warranty
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <!-- <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+                            <div class="table-responsive">
+                                <table id="tabel_1" class="table display expandable-table table-hover" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>SR No.</th>
+                                            <th>AMC/FMS/WARR.</th>
+                                            <th>From Date</th>
+                                            <th>To Date</th>
+                                            <th>Vendor Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td> <select class="form-select" aria-label="Default select example" id="AMCType" name="AMC_Type">
+                                                    <option selected>FMS</option>
+                                                    <option value="1">FMS</option>
+                                                    <option value="2">AMC</option>
+                                                    <option value="3">WARR.</option>
+                                                </select> </td>
+                                            <td><input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                                            </td>
+                                            <td><input type="date" class="form-control" id="datet" name="date_t" placeholder="">
+                                            </td>
+
+                                            <td> <select class="form-select" aria-label="Default select example">
+                                                    <option selected>KARVY INOTECH PVT. LTD.</option>
+                                                    <option value="1">KOSLE TECH PVT.LTD</option>
+                                                    <option value="2">VISON TECHNICAL SOLUTION PVT.LTD</option>
+                                                    <option value="3">Others</option>
+                                                </select> </td>
+                                            <td><button type="button" class="btn btn-primary"><i
+                                                        class="bi bi-plus"></i></button>
+                                            </td>
+                                            <td><button type="button" class="btn btn-primary"><i
+                                                        class="bi bi-dash-lg"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Assets Issued to Employees/Returned by Employees
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+
+                            <div class="table-responsive">
+                                <table id="tabel_1" class="table display expandable-table table-hover" style="width:100%" bg-primary>
+                                    <thead>
+                                        <tr>
+                                            <th>SR No.</th>
+                                            <th>EMP_ID</th>
+                                            <th>EMP_NAME</th>
+                                            <th>Date Of Recieve</th>
+                                            <th>Date Of Return</th>
+                                            <th>Accept ?</th>
+                                            <th>Surr ?</th>
+                                            <th>Cert ?</th>
+                                            <th>Sure to Emp_ID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td><input type="text" class="form-control" id="datef" name="date_f" placeholder="" value="2716" disabled></td>
+                                            <td><input type="text" class="form-control" id="datef" name="date_f" placeholder="" value="Kamal Sharma"></td>
+                                            <td><input type="date" class="form-control" id="datef" name="date_f" placeholder=""></td>
+                                            <td><input type="date" class="form-control" id="datef" name="date_f" placeholder=""></td>
+                                            <td> <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td> <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td> <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault"></td>
+                                            <td><input type="text" class="form-control" id="datef" name="date_f" placeholder="" value=""></td>
+                                            <td><button type="button" class="btn btn-primary"><i
+                                                        class="bi bi-plus"></i></button>
+                                            </td>
+                                            <td><button type="button" class="btn btn-primary"><i
+                                                        class="bi bi-dash-lg"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- accordian end 1 -->
+
+            <div class="container mt-2">
+                <button type="button" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary ml-2">Add</button>
+                <button type="button" class="btn btn-primary ml-2 border">Cancel</button>
+                <button type="button" class="btn btn-primary ml-2">Delete</button>
+            </div>
+            </div>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong>
+            <script type="text/javascript">
+                var d = new Date();
+                yr = d.getFullYear();
+                document.write(yr);
+            </script>. All Rights Reserved
+        </div>
+    </footer>
+    <script src="../../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+    <script src="../../../assets/js/main.js"></script>
+    <script src="../../../assets/js/uti.js"></script>
+    <script src="../../../assets/js/custom.js"></script>
+</body>
+
+</html>

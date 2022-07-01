@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>New Request Form</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/css/main.css" rel="stylesheet">
+  <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span
+          class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt=""
+        width="60%"></div>
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#"
+            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li><a class="dropdown-item d-flex align-items-center" href="../../login.html"><i
+                  class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- sidebar start -->
+  <div uti-include-html="../../includes/sidebar.html"></div>
+  <!-- sidebar end -->
+  <main id="main" class="main">
+    <section class="section dashboard">
+      <div class="bg-white p-3 border">
+        <div class="row">
+          <div class="col-md-10">
+            <h5>New Tour Request Form</h5>
+          </div>
+          <div class="col-md-2">
+            <label>Date of Request</label>
+            <input type="text" class="form-control form-control-sm" id="datereq" name="date_req"
+              placeholder="10/05/2022" value="" disabled />
+          </div>
+
+          <p>UTI Asset Management Company Limited Tour Plan / Advance Approval Application </p>
+          <hr />
+        </div>
+        <form>
+          <div class="row">
+            <div class="form-group col-md-4 mb-3">
+              <label>Tour Itinerary </label>
+              <select class="form-select" id="touritinerary" name="tour_itinerary">
+                <option>Select Tour</option>
+                <option>Domestic Tour</option>
+                <option>Foreign Tour[Contest Winner]</option>
+                <option>Foreign Tour[Other]</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label>Tour Type</label>
+              <select class="form-select" name="tour type" id="tourtype">
+                <option>Select Tour type</option>
+                <option>Board Meeting</option>
+                <option>Sales Tour</option>
+                <option>Company Visit</option>
+                <option>Transfer</option>
+                <option>Agent Meeting</option>
+                <option>Seminar</option>
+                <option>Functional Training</option>
+                <option>Behavioral Training</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-4 mb-3">
+              <label>Place(s) to be visited
+                <span class="text-danger">*</span></label>
+              <select class="form-select" id="empplacev" name="emp_place_v">
+                <option>Select Place</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Bangalore</option>
+                <option>Hyderabad</option>
+                <option>Ahmedabad</option>
+                <option>Chennai</option>
+                <option>Jaipur</option>
+                <option>Surat</option>
+                <option>Other</option>
+              </select>
+              <!-- <input type="text" id="empplacev" name="emp_place_v" placeholder="Enter Your visiting place" class="form-control" /> -->
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label>Purpose of visit <span class="text-danger">*</span></label>
+              <input type="text" id="emppurposev" name="emp_purpose_v" placeholder="Enter Your purpose visiting place"
+                class="form-control" />
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label>Start Date</label>
+              <input type="datetime-local" id="startDate" name="start_Date" class="form-control" />
+            </div>
+            <!-- <div class="form-group col-md-2 mb-3">
+                <label>Start Time</label>
+                <input class="timmer" type="number" min="0" max="23" placeholder="23">:
+                <input class="timmer" type="number" min="0" max="59" placeholder="00">
+              </div> -->
+            <div class="form-group col-md-4 mb-3">
+              <label>Return Date</label>
+              <input type="datetime-local" class="form-control" id="problemreturndate" name="problem_return_date" />
+            </div>
+            <!-- <div class="form-group col-md-2 mb-3">
+                <label>Return Time</label>
+                <input class="timmer" type="number" min="0" max="23" placeholder="23">:
+                <input class="timmer" type="number" min="0" max="59" placeholder="00">
+              </div> -->
+            <div class="form-group col-md-4 mb-3">
+              <label>Do you avail leave during tour?</label>
+              <select class="form-select" id="leaveduringtour" name="leave_during_tour">
+                <option>Select Option</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label>Ticket Booking to be done by</label>
+              <select class="form-select" id="ticketbookedby" name="ticket_booked_by">
+                <option>Select Option</option>
+                <option>Self</option>
+                <option>Travel Desk</option>
+                <option>Both</option>
+                <option>Sponsoring Company</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label>Not Booking Air Ticket in 2 weeks
+                adv</label>
+              <select class="form-select" id="justificationadvance" name="justification_advance">
+                <option>Select Option</option>
+                <option>Delay getting Internal Approval</option>
+                <option>Finalised less than 2 weeks</option>
+                <option>Forget to submit Tour approval</option>
+                <option>Justify by his self</option>
+                <option>Others</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label>Is travel mode as per entitlement :</label>
+              <select class="form-select" id="travelmode" name="travel_mode">
+                <option>Select Option</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>Frequent Flyer No(s) (If any)</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label>Frequent Flyer No(s) (If any):</label>
+              <select class="form-select" id="frequentflyer" name="frequent_flyer">
+                <option>Select Option</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="col-md-1 mt-1">
+              <button type="button" id="btn_sub" name="btnsub" class="btn btn-primary mt-3">
+                Submit
+              </button>
+            </div>
+            <div class="col-md-3   mt-1">
+              <button type="button" class="btn btn-warning mt-3 w-100" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Journey Booking Details
+              </button>
+            </div>
+
+            <!-- Modal start -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Journey Booking Details Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body col-md-12 p-4">
+                    <form>
+
+                      <div class="row border p-2 mb-2">
+
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Serial Number</label>
+                          <input type="text" id="srno" name="sr_no" placeholder="Enter Serial Number" class="form-control" />
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Date of Journey</label>
+                          <input type="date" id="my_date" name="my_date" value="2022-05-28" class="form-control" />
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Travel Mode</label>
+                          <select class="form-select">
+                            <option>Select Option</option>
+                            <option>Air</option>
+                            <option>Train</option>
+                            <option>buses</option>
+                            <option>On Vehicle</option>
+                            <option>Taxi</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>From Place</label>
+                          <input type="text" id="srno" name="sr_no" placeholder="Enter Your Place" class="form-control" />
+                        </div> 
+                        <div class="form-group col-md-2 mb-3">
+                          <label>To Place</label>
+                          <input type="text" id="srno" name="sr_no" placeholder="Enter Your Place" class="form-control" />
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Journery Class</label>
+                          <select class="form-select" id="journeryclass" name="journery_class">
+                            <option>Select</option>
+                            <option>Business</option>
+                            <option>Economy</option>
+                            <option>First class</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Ticket booked by</label>
+                          <select class="form-select" id="ticketbookedby" name='ticket_booked_by'>
+                            <option>Travel Desk</option>
+                            <option>Self</option>
+                            <option>Both</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Time Range from</label>
+                          <input type="time" id="apptimerangeto" name="app_time_range_to" min="24:00" max="24:00" required class="form-control" />
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Time Range to</label>
+                          <input type="time" id="apptimerangeto" name="app_time_range_to" min="24:00" max="24:00" required class="form-control" />
+                        </div>
+                        <div class="form-group col-md-6 mb-3 mt-3 text-end">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">-</button>
+                          <button type="button" class="btn btn-primary" id="update_val">+</button>
+                    
+                        </div>
+                      </div>
+
+                      <div class="row border p-2 mb-2">
+
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Serial Number</label>
+                          <input type="text" id="srno" name="sr_no" placeholder="Enter Serial Number" class="form-control" />
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Date of Journey</label>
+                          <input type="date" id="my_date" name="my_date" value="2022-05-28" class="form-control" />
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Travel Mode</label>
+                          <select class="form-select">
+                            <option>Select Option</option>
+                            <option>Air</option>
+                            <option>Train</option>
+                            <option>buses</option>
+                            <option>On Vehicle</option>
+                            <option>Taxi</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>From Place</label>
+                          <input type="text" id="srno" name="sr_no" placeholder="Enter Your Place" class="form-control" />
+                        </div> 
+                        <div class="form-group col-md-2 mb-3">
+                          <label>To Place</label>
+                          <input type="text" id="srno" name="sr_no" placeholder="Enter Your Place" class="form-control" />
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Journery Class</label>
+                          <select class="form-select" id="journeryclass" name="journery_class">
+                            <option>Select</option>
+                            <option>Business</option>
+                            <option>Economy</option>
+                            <option>First class</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Ticket booked by</label>
+                          <select class="form-select" id="ticketbookedby" name='ticket_booked_by'>
+                            <option>Travel Desk</option>
+                            <option>Self</option>
+                            <option>Both</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Time Range from</label>
+                          <input type="time" id="apptimerangeto" name="app_time_range_to" min="24:00" max="24:00" required class="form-control" />
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                          <label>Time Range to</label>
+                          <input type="time" id="apptimerangeto" name="app_time_range_to" min="24:00" max="24:00" required class="form-control" />
+                        </div>
+                        <div class="form-group col-md-6 mb-3 mt-3 text-end">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">-</button>
+                          <button type="button" class="btn btn-primary" id="update_val">+</button>
+                    
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">-</button>
+                    <button type="button" class="btn btn-primary" id="update_val">+</button>
+                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- model end -->
+          </div>
+        </form>
+        <hr />
+
+        <div class="row mt-3">
+          <div class="form-group col-md-3">
+            <label>Advance Amount Requested:</label>
+            <input type="number" id="advamount" name="adv_amount" placeholder="Enter Your Advance Amount"
+              class="form-control" />
+          </div>
+
+          <div class="form-group col-md-6">
+            <label>Remark (Justification)</label>
+            <input type="text" id="empremark" name="emp_remark" placeholder="Enter Your Remark" class="form-control" />
+          </div>
+          <div class="form-group col-md-3">
+            <label>Approver(**):</label>
+            <select class="form-select" id="approvestatus" name="approve_status" onchange="openForm()">
+              <option>Select Option</option>
+              <option>Supervisors</option>
+              <option>MD</option>
+              <option>CEO</option>
+              <option>Chairman</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="col-md-12 border pt-3 pb-2 ps-3 pe-3 mb-4 shadow">
+          <div class="row" id="showbox">
+            <div class="form-group col-md-4">
+              <label>Emp ID:</label>
+              <input type="text" id="empid" name="emp_id" placeholder="Enter Your Emp ID" class="form-control" />
+            </div>
+            <div class="form-group col-md-4">
+              <label>Emp Name:</label>
+              <input type="text" id="empname" name="emp_name" placeholder="Enter Your Emp Name" class="form-control" />
+            </div>
+            <div class="form-group col-md-4">
+              <label>Emp Reason:</label>
+              <input type="text" id="empreason" name="emp_" placeholder="Enter Your Emp Reason" class="form-control" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <button type="button" id="btncnl" name="btn_cnl" class="btn btn-primary w-100 mb-2">
+              Cancel
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button type="button" id="btnsave" name="btn_save" class="btn btn-primary w-100 mb-2">
+              Save for Later
+            </button>
+          </div>
+
+          <!-- Button trigger modal -->
+          <div class="col-md-3">
+
+            <button type="button" class="btn btn-primary w-100 mb-2" data-bs-toggle="modal" data-bs-target="#Modal"
+              id="submittourrequest" name="submit_tour_request">
+              Submit Tour Request</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Tour Request</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Are You Sure. You want to Submit the Tour Request?
+            </div>
+            <div class="modal-footer">
+              <button onclick="window.location.href='request.html'" type="button" id="btn_ok" name="btnok"
+                class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Ok</button>
+              <button type="button" id="btn_cnl2" class="btn btn-secondary" data-bs-dismiss="modal"
+                name='btnclose'="btn_close" aria-label="Close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer">
+    <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong>
+      <script type="text/javascript">
+        var d = new Date();
+        yr = d.getFullYear();
+        document.write(yr);
+      </script>. All Rights Reserved
+    </div>
+  </footer>
+  <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/uti.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+  <script src="../../assets/js/timmer.js"></script>
+  <script>
+    function openForm() {
+      var status = document.getElementById("approvestatus");
+      if (status.value == "other") {
+        document.getElementById("showbox").style.visibility = "visible ";
+      }
+      else {
+        document.getElementById("showbox").style.visibility = "hidden";
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Tour Reschedule</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="../../assets/css/bootstrap.min_v5.1.3.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="../../assets/css/main.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"><i class="toggle-sidebar-btn pe-2"> <span class="fa fa-align-justify text-white"></span> </i><img src="../../assets/images/logo_1.png" alt="" width="60%"></div>
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<li class="nav-item dropdown pe-4"><a class="nav-link dropdown-toggle text-white small" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="../../login.html"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- sidebar start -->
+	<div uti-include-html="../../includes/sidebar.html"></div>
+	<!-- sidebar end -->
+  <main id="main" class="main">
+		<section class="section dashboard">
+    <div class="bg-white p-3 border">
+      <div class="row">
+        <div class="col-md-10">
+          <h5>Tour Reschedule</h5>
+        </div>
+        <div class="col-md-2">
+                <input type="text" class="form-control form-control-sm" id="datereq" name="date_req" placeholder="10/05/2022" value="" disabled /><br>
+        </div>
+        <hr>
+      </div>
+      <form>
+        <div class="row mt-2">
+          <div class="form-group col-md-2">
+            <label>Tour Number </label>	
+            <input type="text" class="form-control" id="" name="" placeholder="82642" />
+            <!-- <select class="form-select" id="tournumber" name="tour_number">
+              <option>Select Tour</option>
+              <option>82642</option>
+              <option>82643</option>
+              <option>82644</option>
+            </select> -->
+          </div>
+          <div class="form-group col-md-3">
+            <label>Tour From Date</label>
+            <input type="text" class="form-control" id="tfdate" name="t_f_date" placeholder="02052022" />
+          </div>
+          <div class="form-group col-md-3">
+            <label>Tour to Date</label>
+            <input type="text" class="form-control" id="ttdate" name="t_t_date" placeholder="06052022" />
+          </div>
+          <div class="form-group col-md-2">
+            <label>Tour Approved</label>
+            <select class="form-select" id="tapproved" name="t_approved">
+              <!-- <option>Select Option</option> -->
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label>Tickets Booked</label>
+            <select class="form-select" id="ticketbooked" name="ticket_booked">
+              <!-- <option>Select Option</option> -->
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          
+          <div class="form-group col-md-3">
+            <!-- <label>Ticket Route Booked Reschedule </label> -->
+            <label>Partial Reschedule</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" 
+              data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
+              >
+              <label class="form-check-label" for="flexRadioDefault1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label" for="flexRadioDefault1">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group col-md-9">
+            <!-- <label>Ticket Route Booked Reschedule </label> -->
+            <label>Full Route Reschedule</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" 
+              data-bs-toggle="collapse" href="#oldt" role="button" aria-expanded="false" aria-controls="oldt"
+              >
+              <label class="form-check-label" for="flexRadioDefault1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label" for="flexRadioDefault1">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body border p-3">
+             <div class="row">
+               <h6><strong>Partial Reschedule</strong></h6>
+               <hr>
+              <div class="col-md-12">
+                <table class="table border-bottom">
+                  <tr>
+                    <td><i class="fa fa-plane"></i> <strong>Original From Route</strong> </td>
+                    <td>Mumbai <br> <span class="small">02/05/2022</span></td>
+                    <td><i class="bi bi-arrow-right"></i></td>
+                    <td>Delhi <br> <span class="small">04/05/2022</span></td>
+                    <td><i class="bi bi-arrow-right"></i></td>
+                    <td>Kolkata <br> <span class="small">06/05/2022</span></td>
+                    <td class="pull-right border-0"><button type="button" class="btn btn-primary"> <i class="bi bi-pencil-square"></i> Reschedule</button>  </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="form-group col-md-3">
+                <label>From Mumbai</label>
+                <input type="search" id="fromroutesearch" name="gsearch" class="form-control" name="original_ticket_route" value="Mumbai" disabled>
+              </div>
+              <div class="col-md-2 mt-3 text-center pt-2">
+                <i class="bi bi-arrow-left-right"></i>
+             </div>
+             <div class="form-group col-md-3">
+              <label>To Delhi</label>
+              <input type="search" id="toroutesearch" name="gsearch" class="form-control" name="original_ticket_route" value="Delhi" disabled>
+            </div>
+            
+             <div class="col-md-2 mt-3 text-center">
+              <button type="button" class="btn btn-secondary w-100">Cancel Route</button>
+           </div>
+           <div class="col-md-2 mt-3 text-center">
+            <button type="button" class="btn btn-secondary w-100">Submit</button>
+         </div>
+ 
+
+          <div class="form-group col-md-3">
+            <label>From Delhi</label>
+            <input type="search" id="fromroutesearch" name="gsearch" class="form-control" name="original_ticket_route" value="Delhi">
+          </div>
+          <div class="col-md-2 mt-3 text-center pt-2">
+            <i class="bi bi-arrow-left-right"></i>
+         </div>
+         <div class="form-group col-md-3">
+          <label>To Kolkata</label>
+          <input type="search" id="toroutesearch" name="gsearch" class="form-control" name="original_ticket_route" value="Kolkata">
+        </div>
+         <div class="col-md-2 mt-3 text-center">
+          <button type="button" class="btn btn-secondary w-100">Cancel Route</button>
+       </div>
+       <div class="col-md-2 mt-3 text-center">
+        <button type="button" class="btn btn-primary w-100">Submit</button>
+     </div>
+            </div>
+            </div>
+
+
+            <div class="card card-body border p-3">
+              <div class="row">
+                <h6><strong>New Route Reschedule</strong></h6>
+                <hr>
+
+                <div class="form-group col-md-5">
+                  <label>From Delhi</label>
+                  <input type="search" id="fromroutesearch" name="gsearch" class="form-control" name="original_ticket_route" value="Delhi">
+                </div>
+                <div class="col-md-1 mt-3 text-center pt-2">
+                  <i class="bi bi-arrow-left-right"></i>
+               </div>
+               <div class="form-group col-md-5">
+                <label>To Kolkata</label>
+                <input type="search" id="toroutesearch" name="gsearch" class="form-control" name="original_ticket_route" value="Kolkata">
+              </div>
+               <div class="col-md-1 mt-3 text-center">
+                <button type="button" class="btn btn-secondary"> <i class="fa fa-plus"></i> </button>
+             </div>
+             <!-- <div class="col-md-2 mt-3 text-center">
+              <button type="button" class="btn btn-primary w-100">Submit</button>
+           </div> -->
+
+
+
+
+<hr>
+
+           <div class="form-group col-md-5">
+            <label>From</label>
+             <select id="country-state" name="country-state" class="form-control">
+               <option>Select</option>
+              <option value="AN">Andaman and Nicobar Islands</option>
+              <option value="AP">Andhra Pradesh</option>
+              <option value="AR">Arunachal Pradesh</option>
+              <option value="AS">Assam</option>
+              <option value="BR">Bihar</option>
+              <option value="CH">Chandigarh</option>
+              <option value="CT">Chhattisgarh</option>
+              <option value="DN">Dadra and Nagar Haveli</option>
+              <option value="DD">Daman and Diu</option>
+              <option value="DL">Delhi</option>
+              <option value="GA">Goa</option>
+              <option value="GJ">Gujarat</option>
+              <option value="HR">Haryana</option>
+              <option value="HP">Himachal Pradesh</option>
+              <option value="JK">Jammu and Kashmir</option>
+              <option value="JH">Jharkhand</option>
+              <option value="KA">Karnataka</option>
+              <option value="KL">Kerala</option>
+              <option value="LA">Ladakh</option>
+              <option value="LD">Lakshadweep</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="MH">Maharashtra</option>
+              <option value="MN">Manipur</option>
+              <option value="ML">Meghalaya</option>
+              <option value="MZ">Mizoram</option>
+              <option value="NL">Nagaland</option>
+              <option value="OR">Odisha</option>
+              <option value="PY">Puducherry</option>
+              <option value="PB">Punjab</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="SK">Sikkim</option>
+              <option value="TN">Tamil Nadu</option>
+              <option value="TG">Telangana</option>
+              <option value="TR">Tripura</option>
+              <option value="UP">Uttar Pradesh</option>
+              <option value="UT">Uttarakhand</option>
+              <option value="WB">West Bengal</option>
+          </select>
+             <input type="datetime-local" id="fromroutesearch" name="" class="form-control mt-2" name="original_ticket_route" value="">
+           </div>
+           <!-- <div class="form-group col-md-2">
+            <label>Date</label>
+            <input type="text" id="fromroutesearch" name="" class="form-control" name="original_ticket_route" value="04/05/2022">
+          </div> -->
+           <div class="col-md-1 mt-3 text-center pt-2">
+             <i class="bi bi-arrow-left-right"></i>
+          </div>
+          <div class="form-group col-md-5">
+            <label>To</label>
+             <select id="country-state" name="country-state" class="form-control">
+               <option>Select</option>
+              <option value="AN">Andaman and Nicobar Islands</option>
+              <option value="AP">Andhra Pradesh</option>
+              <option value="AR">Arunachal Pradesh</option>
+              <option value="AS">Assam</option>
+              <option value="BR">Bihar</option>
+              <option value="CH">Chandigarh</option>
+              <option value="CT">Chhattisgarh</option>
+              <option value="DN">Dadra and Nagar Haveli</option>
+              <option value="DD">Daman and Diu</option>
+              <option value="DL">Delhi</option>
+              <option value="GA">Goa</option>
+              <option value="GJ">Gujarat</option>
+              <option value="HR">Haryana</option>
+              <option value="HP">Himachal Pradesh</option>
+              <option value="JK">Jammu and Kashmir</option>
+              <option value="JH">Jharkhand</option>
+              <option value="KA">Karnataka</option>
+              <option value="KL">Kerala</option>
+              <option value="LA">Ladakh</option>
+              <option value="LD">Lakshadweep</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="MH">Maharashtra</option>
+              <option value="MN">Manipur</option>
+              <option value="ML">Meghalaya</option>
+              <option value="MZ">Mizoram</option>
+              <option value="NL">Nagaland</option>
+              <option value="OR">Odisha</option>
+              <option value="PY">Puducherry</option>
+              <option value="PB">Punjab</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="SK">Sikkim</option>
+              <option value="TN">Tamil Nadu</option>
+              <option value="TG">Telangana</option>
+              <option value="TR">Tripura</option>
+              <option value="UP">Uttar Pradesh</option>
+              <option value="UT">Uttarakhand</option>
+              <option value="WB">West Bengal</option>
+          </select>
+             <input type="datetime-local" id="fromroutesearch" name="" class="form-control mt-2" name="original_ticket_route" value="">
+           </div>
+         <!-- <div class="form-group col-md-2">
+          <label>Date</label>
+          <input type="date" id="fromroutesearch" name="" class="form-control" name="original_ticket_route" value="">
+        </div> -->
+          <div class="col-md-1 mt-3 text-center">
+            <button type="button" class="btn btn-primary"> <i class="fa fa-check-square"></i> </button>
+        </div>
+ 
+ 
+             </div>
+             </div>
+          </div>
+          
+ 
+
+ <div class="collapse" id="oldt">
+  <div class="card card-body border p-3">
+   <div class="row">
+     <h6><strong>Full Route Reschedule</strong></h6>
+     <hr>
+    <div class="col-md-12">
+      <table class="table border-bottom">
+        <tr>
+          <td><i class="fa fa-plane"></i> <strong>Original From Route</strong> </td>
+          <td>Mumbai <br> <span class="small">02/05/2022</span></td>
+          <td><i class="bi bi-arrow-right"></i></td>
+          <td>Delhi <br> <span class="small">04/05/2022</span></td>
+          <td><i class="bi bi-arrow-right"></i></td>
+          <td>Kolkata <br> <span class="small">06/05/2022</span></td>
+          <td class="pull-right border-0"><button type="button" class="btn btn-primary"> <i class="bi bi-pencil-square"></i> Reschedule</button>  </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label>Mumbai</label>
+      <input type="search" id="fromroutesearch" name="" class="form-control" name="original_ticket_route" value="Mumbai">
+      <input type="datetime-local" id="fromroutesearch" name="" class="form-control mt-1" name="original_ticket_route" value="">
+    </div>
+    <div class="col-md-1 mt-3 text-center pt-2">
+      <i class="bi bi-arrow-left-right"></i>
+   </div>
+   <div class="form-group col-md-3">
+    <label>Delhi</label>
+    <input type="search" id="toroutesearch" name="gsearch" class="form-control" name="original_ticket_route" value="Delhi">
+    <input type="datetime-local" id="fromroutesearch" name="" class="form-control mt-1" name="original_ticket_route" value="">
+  </div>
+  <div class="col-md-1 mt-3 text-center pt-2">
+    <i class="bi bi-arrow-left-right"></i>
+ </div>
+ <div class="form-group col-md-3">
+  <label>Kolkata</label>
+  <input type="search" id="toroutesearch" name="gsearch" class="form-control" name="original_ticket_route" value="Kolkata">
+  <input type="datetime-local" id="fromroutesearch" name="" class="form-control mt-1" name="original_ticket_route" value="">
+</div>
+ <div class="col-md-12 mt-3">
+  <button type="button" class="btn btn-primary">Save</button>
+</div>
+
+  </div>
+  </div>
+
+</div>
+
+
+<div class="collapse" id="newt">
+  <div class="card card-body border p-3">
+    <div class="row">
+      <h6><strong>New Tour Reschedule</strong></h6>
+      <hr>
+      <div class="form-group col-md-3">
+        <label>Cancellation Charges </label>
+        <input type="text" class="form-control" id="cancelcharge" name="cancel_charge" />
+      </div>
+      <div class="form-group col-md-3">
+        <label>New Tour From Date</label>
+        <input type="datetime-local" class="form-control" id="newtourfdate" name="new_tour_f_date" />
+      </div>
+      <div class="form-group col-md-3">
+        <label>New Tour to Date</label>
+        <input type="datetime-local" class="form-control" id="newtourtdate" name="new_tour_t_date" />
+      </div>
+      <div class="form-group col-md-3">
+        <label>Ticket Booked </label>
+        <select class="form-select" id="tbooked" name="t_booked">
+          <option>Select Option</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+   </div>
+   </div>
+</div>
+          
+
+          <div class="form-group col-md-2">
+            <button type="button" class="btn btn-primary mt-2 w-100" id="sbtn" name="s_btn">Submit</button>
+          </div>
+        </div>
+      </form>
+      <hr />
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <div class="overflow-auto">
+            <table class="table small border">
+              <tr class="bg-primary text-white">
+                <th scope="col">Sr No</th>
+                <th scope="col">Tour Number</th>
+                <th scope="col">Tour From Date</th>
+                <th scope="col">Tour To Date</th>
+                <th scope="col">Tour Approved</th>
+                <th scope="col">Tickets Booked</th>
+                <th scope="col">Ticket Cancelled</th>
+                <th scope="col">Tour Advance taken</th>
+                <th scope="col">Tour Advance returned</th>
+                <th scope="col">Tour Status</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><a href="" id="tnumber" name="t_number">82642</a></td>
+                <td>02052022</td>
+                <td>08052022</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="" id="tnumber" name="t_number">82642</a></td>
+                <td>02052022</td>
+                <td>06052022</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><a href="" id="tnumber" name="t_number">82643</a></td>
+                <td>01052022</td>
+                <td>07052022</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+  <footer id="footer" class="footer">
+    <div class="copyright">&copy; Copyright <strong><span>UTI</span></strong> <script type="text/javascript">
+      var d = new Date();
+      yr = d.getFullYear();
+      document.write(yr);
+    </script>. All Rights Reserved</div>
+  </footer>
+  <script src="../../assets/js/bootstrap.bundle.min_v5.1.3.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/uti.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+</body>
+</html>
